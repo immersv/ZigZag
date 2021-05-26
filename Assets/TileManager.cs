@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class TileManager : MonoBehaviour
 {
-    public GameObject leftTile,fowardTile;
+    public GameObject[] tiles;
+
     public GameObject currentTile;
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 20; i++)
         {
             SpawnTile();
         }
@@ -23,6 +24,7 @@ public class TileManager : MonoBehaviour
     }
     void SpawnTile()
     {
-       currentTile=(GameObject) Instantiate(fowardTile, currentTile.transform.GetChild(0).position, Quaternion.identity);
+        int index = Random.Range(0, 2);
+       currentTile=(GameObject) Instantiate(tiles[index], currentTile.transform.GetChild(index).position, Quaternion.identity);
     }
 }

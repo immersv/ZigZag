@@ -210,7 +210,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 332216056}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.28, y: 1, z: 0}
+  m_LocalPosition: {x: -1.28, y: 1, z: 0.86}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 963194228}
@@ -451,11 +451,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60c070f670588cb48aed15387875dbe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftTile: {fileID: 426287841127196686, guid: ac600b98f686b2e4a8c4626e2dcb1f20, type: 3}
-  fowardTile: {fileID: 4915101939066397751, guid: 9989b3e6162e44c41a7a59a9a0affa50,
-    type: 3}
-  currentTile: {fileID: 4915101939066397751, guid: 9989b3e6162e44c41a7a59a9a0affa50,
-    type: 3}
+  tiles:
+  - {fileID: 4085835764706651828}
+  - {fileID: 426287841127196686, guid: ac600b98f686b2e4a8c4626e2dcb1f20, type: 3}
+  currentTile: {fileID: 4085835764706651828}
 --- !u!4 &2106851270
 Transform:
   m_ObjectHideFlags: 0
@@ -563,6 +562,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4085835764706651828 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4915101939066397751, guid: 9989b3e6162e44c41a7a59a9a0affa50,
+    type: 3}
+  m_PrefabInstance: {fileID: 8972928400403450499}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8972928400403450499
 PrefabInstance:
   m_ObjectHideFlags: 0
